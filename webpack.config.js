@@ -4,8 +4,14 @@
 //const mode = process.env.NODE_ENV === "production" ? "production" : "development";
 
 module.exports={
+   
    mode:"development",
    devServer:{
-      static:'./dist'
+      private:true,
+      static:'./dist',
+      open:true,
+      compress:true,
+   port:3030
    }
+   
 }
